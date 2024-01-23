@@ -6,7 +6,7 @@ namespace PMS.Domain.Entities.project;
 public class Project
 {
     [Key]
-    public Guid Id { get; set; }
+    public int Id { get; set; }
 
     [MaxLength(100)]
     [Required]
@@ -15,14 +15,13 @@ public class Project
     [MaxLength(500)]
     public string? Description { get; set; }
 
-    [Required]
-    public DateOnly StartDate { get; set; }
+    [Required] public DateTime StartDate { get; set; };
 
     [Required]
-    public DateOnly EndDate { get; set; }
+    public DateTime EndDate { get; set; }
 
     [Required]
-    public DateOnly DeadLine { get; set; }
+    public DateTime DeadLine { get; set; }
 
     public string? Status { get; set; }
 

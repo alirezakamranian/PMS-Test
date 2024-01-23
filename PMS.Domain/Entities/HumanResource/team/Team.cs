@@ -6,7 +6,7 @@ namespace PMS.Domain.Entities.HumanResource.team;
 public class Team
 {
     [Key]
-    public Guid Id { get; set; }
+    public int Id { get; set; }
 
     [MaxLength(100)]
     [Required]
@@ -15,5 +15,5 @@ public class Team
 
     public List<TeamMember> TeamMembers { get; set; }
 
-
+    public ProjectTaskExecutiveAgent ProjectTaskExecutiveAgent { get; set; }
 }

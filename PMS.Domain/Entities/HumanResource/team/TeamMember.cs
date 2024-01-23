@@ -7,7 +7,7 @@ namespace PMS.Domain.Entities.HumanResource.team;
 public class TeamMember
 {
     [Key]
-    public Guid Id { get; set; }
+    public int Id { get; set; }
 
     [MaxLength(50)]
     [Required]
