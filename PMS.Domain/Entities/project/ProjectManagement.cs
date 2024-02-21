@@ -11,7 +11,7 @@ public class ProjectManagement
 
     [MaxLength(50)]
     [Required]
-    public string? ManagementRole { get; set; }
+    public string ManagementRole { get; set; }
 
 
     public int EmployeeId { get; set; }

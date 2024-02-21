@@ -12,7 +12,7 @@ public class ProjectTaskExecutiveAgent
 
     [MaxLength(50)]
     [Required]
-    public string? Role { get; set; }
+    public string Role { get; set; }
 
 
     public int EmployeeId { get; set; }

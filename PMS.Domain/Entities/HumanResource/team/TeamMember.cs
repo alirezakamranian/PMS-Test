@@ -2,6 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Security.Authentication.ExtendedProtection;
 
+
 namespace PMS.Domain.Entities.HumanResource.team;
 
 public class TeamMember
@@ -11,16 +12,16 @@ public class TeamMember
 
     [MaxLength(50)]
     [Required]
-    public string? Role { get; set; }
+    public string Role { get; set; }
 
     public int TeamId { get; set; }
     [ForeignKey("TeamId")]
-    public Team Team { get; set; }
+    public Team Teame { get; set; }
 
     public int EmployeeId { get; set; }
     [ForeignKey("EmployeeId")]
     public Employee Employee { get; set; }
 
-    public List<TeamMemberTask> TeamMemberTasks { get; set; }
+
 
 }

@@ -10,7 +10,7 @@ public class ProjectTask
     public int Id { get; set; }
 
     [MaxLength(500)]
-    public string? Description { get; set; }
+    public string Description { get; set; }
 
     [Required]
     public DateTime StartDate { get; set; }
@@ -27,7 +27,6 @@ public class ProjectTask
     public Project Project { get; set; }
 
 
-    public int ProjectTaskExecutiveAgent { get; set; }
-    [ForeignKey("ProjectTaskExecutiveAgent")]
+
     public List<ProjectTaskExecutiveAgent> ProjectTaskExecutiveAgents { get; set; }
 }
