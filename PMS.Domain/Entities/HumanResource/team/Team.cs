@@ -10,7 +10,7 @@ public class Team
 
     [MaxLength(100)]
     [Required]
-    public string? Name { get; set; }
+    public string Name { get; set; }
 
 
     public List<TeamMember> TeamMembers { get; set; }

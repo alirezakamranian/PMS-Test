@@ -10,12 +10,12 @@ public class Project
 
     [MaxLength(100)]
     [Required]
-    public string? Name { get; set; }
+    public string Name { get; set; }
 
     [MaxLength(500)]
-    public string? Description { get; set; }
+    public string Description { get; set; }
 
-    [Required] public DateTime StartDate { get; set; };
+    [Required] public DateTime StartDate { get; set; }
 
     [Required]
     public DateTime EndDate { get; set; }
@@ -23,7 +23,7 @@ public class Project
     [Required]
     public DateTime DeadLine { get; set; }
 
-    public string? Status { get; set; }
+    public string Status { get; set; }
 
 
     public List<ProjectTask> ProjectTasks { get; set; }
