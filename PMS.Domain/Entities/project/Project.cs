@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
 
 namespace PMS.Domain.Entities.project;
 
@@ -15,10 +16,8 @@ public class Project
     [MaxLength(500)]
     public string Description { get; set; }
 
-    [Required] public DateTime StartDate { get; set; }
-
-    [Required]
-    public DateTime EndDate { get; set; }
+    [Required] 
+    public DateTime StartDate { get; set; }
 
     [Required]
     public DateTime DeadLine { get; set; }
